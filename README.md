@@ -32,3 +32,9 @@ Also *initramfs* should be set to hold. The main issue now is that certain softw
 To install UBTouch, you also need to install gemian before.
 To find the UBTouch installation files may feel a bit unguided and difficult.
 https://gitlab.com/ubports/porting/community-ports/android9/planet-cosmocom/planet-cosmocom/-/jobs?kind=BUILD
+
+
+
+
+#### Chromium too small
+Locate the UserDependencies flags file and add *--force-device-scale-factor* to your prefered factor and adjust it to the other flags found in the file.
