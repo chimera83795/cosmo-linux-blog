@@ -40,6 +40,7 @@ https://gitlab.com/ubports/porting/community-ports/android9/planet-cosmocom/plan
 Locate the UserDependencies flags file and add *--force-device-scale-factor* to your prefered factor and adjust it to the other flags found in the file.
 In my case the file was located at */etc/chromium.d/default-flags* and i added:
 > export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --force-device-scale-factor=1.8"
+
 Sadly chromium seems to be the best working browser.So I changed the default search-engine to duckduckgo :/
 Just click on settings -> search engine -> manage -> add -> duckduckgo | duckduckgo.com | https://duckduckgo.com/q=%s
 
