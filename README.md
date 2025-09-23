@@ -41,11 +41,17 @@ Locate the UserDependencies flags file and add *--force-device-scale-factor* to 
 In my case the file was located at */etc/chromium.d/default-flags* and i added:
 > export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --force-device-scale-factor=1.8"
 
-Sadly chromium seems to be the best working browser.So I changed the default search-engine to duckduckgo :/
+Sadly chromium seems to be the best working browser.So I changed the default search-engine to duckduckgo :/ , so
+just click on settings -> search engine -> manage -> add -> duckduckgo | duckduckgo.com | https://duckduckgo.com/q=%s
+if you want to change the search engine to something a bit more private.
 
-Just click on settings -> search engine -> manage -> add -> duckduckgo | duckduckgo.com | https://duckduckgo.com/q=%s
+### tor
+To access the onion-routing network (tor), installing the service and proxychains default configuration should work fine,
+but you should clear the cookies cause unfortunately the only working option is chromium.
 
-
+### other application
+deb-packages often have been compiled for a different architecture.
+A solution might be to recompile from source, but the way to install depend on the exact package. 
 
 
 
