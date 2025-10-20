@@ -53,15 +53,15 @@ but you should clear the cookies cause unfortunately the only working browser i 
 If you want to use libcrypto (3) or upgrade your openssl, you might encounter some issues while using apt,
 i guess that is since the official gemian repo isnt updated anymore.
 Download the desired version from: https://www.openssl-library.org/source/ .
->cd <FILE-LOCATION>
->#extract the archive with tar or whatever compression type you chose.
->cd <EXTRACTED-FOLDER>
->./config #add desired options
->make
->sudo make install
+> cd <FILE-LOCATION>
+> #extract the archive with tar or whatever compression type you chose.
+> cd <EXTRACTED-FOLDER>
+> ./config #add desired options
+> make
+> sudo make install
 When link the /usr/local location to /usr/lib/<architecture>.
->sudo ln -s /usr/local/lib/libcrypto.so.3 /usr/lib/<architecture>/libcrypto.so.3
->sudo ln -s /usr/local/lib/libssl.so.3 /usr/lib/<architecture>/libssl.so.3
+> sudo ln -s /usr/local/lib/libcrypto.so.3 /usr/lib/<architecture>/libcrypto.so.3
+> sudo ln -s /usr/local/lib/libssl.so.3 /usr/lib/<architecture>/libssl.so.3
 
 
 ### other application
