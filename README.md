@@ -54,12 +54,20 @@ https://gitlab.com/torproject/tor .
 Follow the steps to install openssl below for the new version.
 When you might need to install autoconf, asciidoc and libevent-dev .
 and used
+
 >autoconf
+
 >autoreconf -fi
+
 >./configure
+
 >make
+
+
 When nano into the *Makefile*, and search for the line with *-lssl -lcrypto* or similar and add *-L /usr/local/lib* .
+
 >make
+
 ...
 
 ### openssl and libcrypto
