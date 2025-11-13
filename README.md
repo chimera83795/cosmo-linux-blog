@@ -49,6 +49,19 @@ if you want to change the search engine to something a bit more private.
 To access the onion-routing network (tor), installing the service and proxychains default configuration should work fine,
 but you should clear the cookies cause unfortunately the only working browser i know of is chromium.
 
+Due to tor updates and flowctl packages, I reinstalled tor manually from
+https://gitlab.com/torproject/tor .
+Follow the steps to install openssl below for the new version.
+When you might need to install autoconf, asciidoc and libevent-dev .
+and used
+>autoconf
+>autoreconf -fi
+>./configure
+>make
+When nano into the *Makefile*, and search for the line with *-lssl -lcrypto* or similar and add *-L /usr/local/lib* .
+>make
+...
+
 ### openssl and libcrypto
 If you want to use libcrypto (3) or upgrade your openssl, you might encounter some issues while using apt,
 i guess that is since the official gemian repo isnt updated anymore.
