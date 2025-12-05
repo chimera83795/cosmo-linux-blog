@@ -95,6 +95,9 @@ When link the /usr/local location to /usr/lib/<architecture>.
 
 > sudo ln -s /usr/local/lib/libssl.so.3 /usr/lib/<architecture>/libssl.so.3
 
+### docker
+follow the steps on https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10 and change architecture to arm64.
+
 
 ### other application
 deb-packages often have been compiled for a different architecture.
